@@ -1,8 +1,9 @@
 //2. Write a C program to add two numbers.
+#include<stdio.h>
 int main()
 {
     int a,b,sum;
-    printf("Enter the value of number1:");
+    printf("Enter the value of number1:\n");
     scanf("%d",&a);
     printf("Enter the value of number2:");
     scanf("%d",&b);
