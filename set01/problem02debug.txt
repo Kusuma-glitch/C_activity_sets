@@ -1,4 +1,5 @@
 PS C:\Users\Lenovo\Documents\GitHub\C_activity_sets\set01> gcc problem02.c -O0 -g
+PS C:\Users\Lenovo\Documents\GitHub\C_activity_sets\set01> gcc problem02.c -O0 -g
 PS C:\Users\Lenovo\Documents\GitHub\C_activity_sets\set01> gdb a.exe
 GNU gdb (GDB) 7.6.1
 Copyright (C) 2013 Free Software Foundation, Inc.
@@ -14,8 +15,8 @@ Reading symbols from C:\Users\Lenovo\Documents\GitHub\C_activity_sets\set01\a.ex
 Breakpoint 1 at 0x40146e: file problem02.c, line 6.
 (gdb) r
 Starting program: C:\Users\Lenovo\Documents\GitHub\C_activity_sets\set01/a.exe
-[New Thread 19452.0x3a90]
-[New Thread 19452.0x65e4]
+[New Thread 26356.0x4c50]
+[New Thread 26356.0x5ce4]
 
 Breakpoint 1, main () at problem02.c:6
 6           printf("Enter the value of number1:\n");
@@ -25,4 +26,11 @@ Enter the value of number1:
 (gdb) s
 s
 8           printf("Enter the value of number2:");
-(gdb)  
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 26356] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+PS C:\Users\Lenovo\Documents\GitHub\C_activity_sets\set01> 
