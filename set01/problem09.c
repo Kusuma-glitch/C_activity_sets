@@ -22,13 +22,6 @@ float input()
     scanf("%f", &inp);
     return inp;
 }
-{
-    float inp;
-    printf("enter the number\n");
-    scanf("%f", &inp);
-    return inp;
-}
-
 float square_root(float n) 
 {
    
