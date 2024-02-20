@@ -1,0 +1,176 @@
+PS C:\Users\Lenovo\Desktop\GitHub\C_activity_sets\set02> gdb ./problem02.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Lenovo\Desktop\GitHub\C_activity_sets\set02\problem02.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem02.c, line 13.
+(gdb) r
+Starting program: C:\Users\Lenovo\Desktop\GitHub\C_activity_sets\set02/./problem02.exe
+[New Thread 23836.0x4834]
+[New Thread 23836.0x3f84]
+
+Breakpoint 1, main () at problem02.c:13
+13          side1 = input_side();
+(gdb) s
+input_side () at problem02.c:24
+24          printf("Enter the length of a side: ");
+(gdb) s
+Enter the length of a side: 25      scanf("%d", &side);
+(gdb) s
+s
+26          return side;
+(gdb) s
+27      }
+(gdb) s
+main () at problem02.c:14
+14          side2 = input_side();
+(gdb) s
+input_side () at problem02.c:24
+24          printf("Enter the length of a side: ");
+(gdb) s
+Enter the length of a side: 25      scanf("%d", &side);
+(gdb) s
+26          return side;
+(gdb) s
+27      }
+(gdb) s
+main () at problem02.c:15
+15          side3 = input_side();
+(gdb) s
+input_side () at problem02.c:24
+24          printf("Enter the length of a side: ");
+(gdb) s
+Enter the length of a side: 25      scanf("%d", &side);
+(gdb) s
+26          return side;
+(gdb) s
+27      }
+(gdb) s
+main () at problem02.c:16
+16          isscalene = check_scalene(side1, side2, side3);
+(gdb) s
+check_scalene (a=6422476, b=6422476, c=6422476) at problem02.c:31
+31          if (a != b && b !=c && a !=c )
+(gdb) s
+34          return 0;
+(gdb) s
+35      }
+(gdb) s
+main () at problem02.c:17
+17          output(side1, side2, side3, isscalene);
+(gdb) s
+output (a=6422476, b=6422476, c=6422476, isscalene=0) at problem02.c:40
+40          if(isscalene)
+(gdb) s
+42          if (isscalene){
+(gdb) s
+47              printf("not scalene.\n");
+(gdb) s
+not scalene.
+49      }
+(gdb) s
+main () at problem02.c:18
+18          return 0;
+(gdb) s
+19      }
+(gdb) s
+0x00401288 in __register_frame_info ()
+(gdb) s
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x0040128a in __register_frame_info ()
+(gdb) s
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x0040128f in __register_frame_info ()
+(gdb) s
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x00401292 in __register_frame_info ()
+(gdb) s
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+[Inferior 1 (process 23836) exited normally]
+(gdb) s
+The program is not being run.
+(gdb) s
+The program is not being run.
+(gdb) s
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) r
+Starting program: C:\Users\Lenovo\Desktop\GitHub\C_activity_sets\set02/./problem02.exe 
+[New Thread 3392.0x3444]
+[New Thread 3392.0x2038]
+
+Breakpoint 1, main () at problem02.c:13
+13          side1 = input_side();
+(gdb) n
+Enter the length of a side: 8
+14          side2 = input_side();
+(gdb) 9
+Undefined command: "9".  Try "help".
+(gdb) 7
+Undefined command: "7".  Try "help".
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+Starting program: C:\Users\Lenovo\Desktop\GitHub\C_activity_sets\set02/./problem02.exe 
+[New Thread 5260.0x5894]
+[New Thread 5260.0x5c10]
+
+Breakpoint 1, main () at problem02.c:13
+13          side1 = input_side();
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+Starting program: C:\Users\Lenovo\Desktop\GitHub\C_activity_sets\set02/./problem02.exe 
+[New Thread 1664.0x39ec]
+[New Thread 1664.0x4d5c]
+
+Breakpoint 1, main () at problem02.c:13
+13          side1 = input_side();
+(gdb) s
+input_side () at problem02.c:24
+24          printf("Enter the length of a side: ");
+(gdb) s
+Enter the length of a side: 25      scanf("%d", &side);
+(gdb) s
+s
+26          return side;
+(gdb) s
+27      }
+(gdb) s
+main () at problem02.c:14
+14          side2 = input_side();
+(gdb) s
+input_side () at problem02.c:24
+24          printf("Enter the length of a side: ");
+(gdb) s
+Enter the length of a side: 25      scanf("%d", &side);
+(gdb) s
+26          return side;
+(gdb) s
+27      }
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 1664] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+PS C:\Users\Lenovo\Desktop\GitHub\C_activity_sets\set02> ./a.exe
+Enter the length of a side: 6
+Enter the length of a side: 7
+Enter the length of a side: 6
+not scalene.
