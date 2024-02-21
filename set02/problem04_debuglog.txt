@@ -1,0 +1,62 @@
+PS C:\Users\Lenovo\Desktop\GitHub\C_activity_sets\set02> gdb ./problem04.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Lenovo\Desktop\GitHub\C_activity_sets\set02\problem04.exe...done.
+(gdb) b maim
+Function "maim" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) n
+(gdb) b main
+Breakpoint 1 at 0x401477: file problem04.c, line 12.
+(gdb) r
+Starting program: C:\Users\Lenovo\Desktop\GitHub\C_activity_sets\set02/./problem04.exe
+[New Thread 1816.0x583c]
+[New Thread 1816.0x4f84]
+
+Breakpoint 1, 0x00401477 in main () at problem04.c:12
+12      {
+(gdb) s
+14          n=input_array_size();
+(gdb) s
+input_array_size () at problem04.c:25
+25          printf("Enter the size of the array:");
+(gdb) s
+Enter the size of the array:26      scanf("%d", &n);
+(gdb) s
+q
+27          return n;
+(gdb) n
+28      }
+(gdb) n
+main () at problem04.c:15
+15          int a[n];
+(gdb) n
+16          input_array(n, a);
+(gdb) n
+Enter 0 numbers:
+17          int sum = sum_composite_numbers(n, a);
+(gdb) n
+18          output(sum);
+(gdb) n
+Sum of composite numbers :0
+19          return 0;
+(gdb) n
+20      }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) n
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x0040128a in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 1816] will be killed.
+
+Quit anyway? (y or n) y
