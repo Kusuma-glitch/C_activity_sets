@@ -43,7 +43,8 @@ int is_composite(int n)
     }
 }
 
-void output(int n, int result){
+void output(int n, int result)
+{
     if(result){
         printf("%d is a composite number.\n", n);
     }
