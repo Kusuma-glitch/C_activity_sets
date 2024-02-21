@@ -16,7 +16,7 @@ int main()
     return 0;
 }
 
-int inout_number()
+int input_number()
 {
     int num;
     printf("Enter a number:");
