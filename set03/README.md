@@ -195,7 +195,7 @@ Enter the number of sides of the polygon:
 Enter the coordinates of point 1 (x,y):
 0 0
 Enter the coordinates of point 2 (x,y):
-1 0
+1 0 
 Enter the coordinates of point 3 (x,y):
 1 1
 Enter the coordinates of point 4 (x,y):
