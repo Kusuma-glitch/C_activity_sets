@@ -1,0 +1,63 @@
+PS C:\Users\Lenovo\Desktop\GitHub\C_activity_sets\set03> gdb ./problem05.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+./problem05.exe: No such file or directory.
+(gdb) b main
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) y
+Breakpoint 1 (main) pending.
+(gdb) b main
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) quit       
+Please answer y or [n].
+Make breakpoint pending on future shared library load? (y or [n]) y
+Breakpoint 2 (main) pending.
+(gdb) b main
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) y
+Breakpoint 3 (main) pending.
+(gdb) quit
+PS C:\Users\Lenovo\Desktop\GitHub\C_activity_sets\set03> gdb ./problem05
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"   
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+./problem05: No such file or directory.
+(gdb) b main
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) y    
+
+Breakpoint 1 (main) pending.
+(gdb) quit  
+PS C:\Users\Lenovo\Desktop\GitHub\C_activity_sets\set03> gdb problem05.c
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"   
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+<http://www.gnu.org/software/gdb/bugs/>...
+"C:\Users\Lenovo\Desktop\GitHub\C_activity_sets\set03/problem05.c": not in executable format: File format not recognized
+(gdb) b main
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) n
+(gdb) r
+Starting program:
+No executable specified, use `target exec'.
+(gdb) s
+The program is not being run.
+(gdb) quit
+PS C:\Users\Lenovo\Desktop\GitHub\C_activity_sets\set03>
